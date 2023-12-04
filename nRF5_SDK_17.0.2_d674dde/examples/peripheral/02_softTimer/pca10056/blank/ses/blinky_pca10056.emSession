@@ -1,0 +1,60 @@
+<!DOCTYPE CrossStudio_Session_File>
+<session>
+ <Bookmarks/>
+ <Breakpoints groups="Breakpoints" active_group="Breakpoints">
+  <BreakpointListItem trigger="" line="196" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="../../../../../../components/libraries/timer/app_timer2.c" useHWbreakpoint="false"/>
+ </Breakpoints>
+ <ExecutionProfileWindow/>
+ <FrameBuffer/>
+ <Memory1/>
+ <Memory2/>
+ <Memory3/>
+ <Memory4/>
+ <Project>
+  <ProjectSessionItem path="blinky_pca10056"/>
+  <ProjectSessionItem path="blinky_pca10056;blinky_pca10056"/>
+  <ProjectSessionItem path="blinky_pca10056;blinky_pca10056;Application"/>
+  <ProjectSessionItem path="blinky_pca10056;blinky_pca10056;Board Definition"/>
+  <ProjectSessionItem path="blinky_pca10056;blinky_pca10056;None"/>
+  <ProjectSessionItem path="blinky_pca10056;blinky_pca10056;nRF_Drivers"/>
+  <ProjectSessionItem path="blinky_pca10056;blinky_pca10056;nRF_Libraries"/>
+  <ProjectSessionItem path="blinky_pca10056;blinky_pca10056;nRF_Log"/>
+ </Project>
+ <Register1/>
+ <Register2/>
+ <Register3/>
+ <Register4/>
+ <Threads>
+  <ThreadsWindow showLists=""/>
+ </Threads>
+ <TraceWindow>
+  <Trace enabled="Yes"/>
+ </TraceWindow>
+ <Watch1>
+  <Watches active="1" update="Never">
+   <Watchpoint expression="nrfx_clock_lfclk_start" name="nrfx_clock_lfclk_start" radix="16" linenumber="268" filename="../../../../../../integration/nrfx/legacy/nrf_drv_clock.c"/>
+  </Watches>
+ </Watch1>
+ <Watch2>
+  <Watches active="0" update="Never"/>
+ </Watch2>
+ <Watch3>
+  <Watches active="0" update="Never"/>
+ </Watch3>
+ <Watch4>
+  <Watches active="0" update="Never"/>
+ </Watch4>
+ <Files>
+  <SessionOpenFile windowGroup="DockEditLeft" x="25" y="10" useTextEdit="1" path="../../../main.c" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="1" y="7" useTextEdit="1" path="../../../nrf52_gpio.c" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="D:/GIT/nRF5_SDK_17.0.2/examples/peripheral/02_softTimer/main.c" path="../../../nrf52_gpio.h" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="252" useTextEdit="1" path="../../../../../../components/libraries/timer/app_timer2.c" left="0" top="252" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="21" y="48" useTextEdit="1" path="../config/sdk_config.h" left="0" top="30" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="33" y="301" useTextEdit="1" path="../../../../../../integration/nrfx/legacy/nrf_drv_clock.c" left="0" selected="1" top="104" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="45" y="93" useTextEdit="1" openedFrom="D:/GIT/nRF5_SDK_17.0.2/integration/nrfx/legacy/nrf_drv_clock.c" path="../../../../../../modules/nrfx/drivers/include/nrfx_clock.h" left="0" top="93" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="21" y="40" useTextEdit="1" path="../../../../../../components/libraries/sortlist/nrf_sortlist.c" left="0" top="31" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="15" y="1005" useTextEdit="1" path="../../../../../../components/libraries/log/src/nrf_log_frontend.c" left="0" top="985" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="44" y="84" useTextEdit="1" openedFrom="D:/GIT/nRF5_SDK_17.0.2/components/libraries/sortlist/nrf_sortlist.c" path="../../../../../../components/libraries/util/nordic_common.h" left="0" top="54" codecName="Default"/>
+ </Files>
+ <EMStudioWindow activeProject="blinky_pca10056" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="D:/GIT/nRF5_SDK_17.0.2/components/libraries/sortlist" debugSearchPath="" autoConnectCapabilities="3711"/>
+</session>

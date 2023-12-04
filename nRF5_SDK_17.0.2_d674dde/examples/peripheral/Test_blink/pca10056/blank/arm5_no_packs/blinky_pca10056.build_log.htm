@@ -1,0 +1,171 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Bui Truong, HUST, LIC=03C6R-K9D7Z-FWJ2N-YWN2Y-IRF71-7UXPV
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.1.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\GIT\nRF5_SDK_17.0.2_d674dde\examples\peripheral\Test_blink\pca10056\blank\arm5_no_packs\blinky_pca10056.uvprojx
+Project File Date:  11/07/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'nrf52840_xxaa'
+../../../../../../components/boards/boards.c(40): warning: In file included from...
+../../../../../../components/boards/boards.h(43): error: 'nrf_gpio.h' file not found
+#include "nrf_gpio.h"
+         ^~~~~~~~~~~~
+1 error generated.
+compiling boards.c...
+../../../../../../modules/nrfx/soc/nrfx_atomic.c(40): warning: In file included from...
+../../../../../../modules/nrfx/soc/nrfx_atomic.h(44): error: 'nrfx.h' file not found
+#include <nrfx.h>
+         ^~~~~~~~
+1 error generated.
+compiling nrfx_atomic.c...
+../../../main.c(53): error: 'nrf_delay.h' file not found
+#include "nrf_delay.h"
+         ^~~~~~~~~~~~~
+1 error generated.
+compiling main.c...
+../../../../../../components/libraries/util/app_error_weak.c(40): warning: In file included from...
+../../../../../../components/libraries/util/app_error.h(57): warning: In file included from...
+../../../../../../components/libraries/util/sdk_errors.h(73): error: 'nrf_error.h' file not found
+#include "nrf_error.h"
+         ^~~~~~~~~~~~~
+1 error generated.
+compiling app_error_weak.c...
+../../../../../../components/libraries/util/app_error.c(51): warning: In file included from...
+../../../../../../components/libraries/util/app_error.h(57): warning: In file included from...
+../../../../../../components/libraries/util/sdk_errors.h(73): error: 'nrf_error.h' file not found
+#include "nrf_error.h"
+         ^~~~~~~~~~~~~
+1 error generated.
+compiling app_error.c...
+../../../../../../components/libraries/util/app_util_platform.c(40): warning: In file included from...
+../../../../../../components/libraries/util/app_util_platform.h(60): warning: In file included from...
+../../../../../../components/libraries/util/app_error.h(57): warning: In file included from...
+../../../../../../components/libraries/util/sdk_errors.h(73): error: 'nrf_error.h' file not found
+#include "nrf_error.h"
+         ^~~~~~~~~~~~~
+1 error generated.
+compiling app_util_platform.c...
+../../../../../../components/libraries/util/app_error_handler_keil.c(40): warning: In file included from...
+../../../../../../components/libraries/util/sdk_common.h(56): error: 'sdk_config.h' file not found
+#include "sdk_config.h"
+         ^~~~~~~~~~~~~~
+1 error generated.
+compiling app_error_handler_keil.c...
+../../../../../../components/libraries/atomic/nrf_atomic.c(40): warning: In file included from...
+../../../../../../components/libraries/atomic/nrf_atomic.h(54): error: 'sdk_common.h' file not found
+#include "sdk_common.h"
+         ^~~~~~~~~~~~~~
+1 error generated.
+compiling nrf_atomic.c...
+../../../../../../components/libraries/balloc/nrf_balloc.c(40): error: 'sdk_common.h' file not found
+#include "sdk_common.h"
+         ^~~~~~~~~~~~~~
+1 error generated.
+compiling nrf_balloc.c...
+../../../../../../components/libraries/util/nrf_assert.c(41): warning: In file included from...
+../../../../../../components/libraries/util/app_error.h(57): warning: In file included from...
+../../../../../../components/libraries/util/sdk_errors.h(73): error: 'nrf_error.h' file not found
+#include "nrf_error.h"
+         ^~~~~~~~~~~~~
+1 error generated.
+compiling nrf_assert.c...
+../../../../../../external/fprintf/nrf_fprintf.c(40): error: 'sdk_common.h' file not found
+#include "sdk_common.h"
+         ^~~~~~~~~~~~~~
+1 error generated.
+compiling nrf_fprintf.c...
+../../../../../../external/fprintf/nrf_fprintf_format.c(59): error: 'sdk_common.h' file not found
+#include "sdk_common.h"
+         ^~~~~~~~~~~~~~
+1 error generated.
+compiling nrf_fprintf_format.c...
+../../../../../../components/libraries/memobj/nrf_memobj.c(41): warning: In file included from...
+../../../../../../components/libraries/memobj/nrf_memobj.h(52): error: 'sdk_errors.h' file not found
+#include "sdk_errors.h"
+         ^~~~~~~~~~~~~~
+1 error generated.
+compiling nrf_memobj.c...
+../../../../../../components/libraries/ringbuf/nrf_ringbuf.c(40): warning: In file included from...
+../../../../../../components/libraries/ringbuf/nrf_ringbuf.h(51): error: 'nrf_atomic.h' file not found
+#include "nrf_atomic.h"
+         ^~~~~~~~~~~~~~
+1 error generated.
+compiling nrf_ringbuf.c...
+../../../../../../components/libraries/strerror/nrf_strerror.c(41): error: 'sdk_common.h' file not found
+#include "sdk_common.h"
+         ^~~~~~~~~~~~~~
+1 error generated.
+compiling nrf_strerror.c...
+../../../../../../components/libraries/log/src/nrf_log_frontend.c(40): error: 'sdk_common.h' file not found
+#include "sdk_common.h"
+         ^~~~~~~~~~~~~~
+1 error generated.
+compiling nrf_log_frontend.c...
+../../../../../../components/libraries/log/src/nrf_log_str_formatter.c(40): error: 'sdk_common.h' file not found
+#include "sdk_common.h"
+         ^~~~~~~~~~~~~~
+1 error generated.
+compiling nrf_log_str_formatter.c...
+assembling arm_startup_nrf52840.s...
+RTE/Device/nRF52840_xxAA/system_nrf52.c(32): warning: In file included from...
+C:/Keil_v5/ARM/PACK/NordicSemiconductor/nRF_DeviceFamilyPack/8.44.1/Device/Include\system_nrf52_approtect.h(41): error: unknown type name 'inline'
+static inline void nrf52_handle_approtect(void)
+       ^
+1 error generated.
+compiling system_nrf52.c...
+".\blinky_pca10056.axf" - 18 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.6.0.pack
+                ARM.CMSIS.5.6.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.3.0
+
+Package Vendor: NordicSemiconductor
+                http://developer.nordicsemi.com/nRF5_SDK/pieces/nRF_DeviceFamilyPack/NordicSemiconductor.nRF_DeviceFamilyPack.8.44.1.pack
+                NordicSemiconductor.nRF_DeviceFamilyPack.8.44.1
+                Nordic Semiconductor nRF ARM devices Device Family Pack with BSD license.
+   * Component: Startup Version: 8.44.1
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_nrf52840_xxaa
+  C:/Keil_v5/ARM/PACK/ARM/CMSIS/5.6.0/CMSIS/Core/Include
+  C:/Keil_v5/ARM/PACK/NordicSemiconductor/nRF_DeviceFamilyPack/8.44.1/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.3.0
+
+   * Component: NordicSemiconductor::Device:Startup:8.44.1
+      Source file:   Device/Source/arm/arm_startup_nrf52840.s
+      Source file:   Device/Source/system_nrf52.c
+      Include file:  Device/Include/system_nrf52840.h
+      Include file:  Device/Include/system_nrf.h
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
