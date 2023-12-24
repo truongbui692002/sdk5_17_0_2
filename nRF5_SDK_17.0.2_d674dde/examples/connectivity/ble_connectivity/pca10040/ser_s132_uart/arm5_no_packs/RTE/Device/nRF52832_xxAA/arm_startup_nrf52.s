@@ -30,7 +30,7 @@ Stack_Size      EQU __STARTUP_CONFIG_STACK_SIZE
                 ELIF :DEF: __STACK_SIZE
 Stack_Size      EQU __STACK_SIZE
                 ELSE
-Stack_Size      EQU 16384
+Stack_Size      EQU 4096
                 ENDIF
                 
                 IF :DEF: __STARTUP_CONFIG
@@ -48,7 +48,7 @@ Heap_Size       EQU __STARTUP_CONFIG_HEAP_SIZE
                 ELIF :DEF: __HEAP_SIZE
 Heap_Size       EQU __HEAP_SIZE
                 ELSE
-Heap_Size       EQU 16384
+Heap_Size       EQU 4096
                 ENDIF
 
                 AREA    HEAP, NOINIT, READWRITE, ALIGN=3
@@ -123,15 +123,15 @@ __Vectors       DCD     __initial_sp              ; Top of Stack
                 DCD     RTC2_IRQHandler
                 DCD     I2S_IRQHandler
                 DCD     FPU_IRQHandler
-                DCD     USBD_IRQHandler
-                DCD     UARTE1_IRQHandler
-                DCD     QSPI_IRQHandler
-                DCD     CRYPTOCELL_IRQHandler
                 DCD     0                         ; Reserved
                 DCD     0                         ; Reserved
-                DCD     PWM3_IRQHandler
                 DCD     0                         ; Reserved
-                DCD     SPIM3_IRQHandler
+                DCD     0                         ; Reserved
+                DCD     0                         ; Reserved
+                DCD     0                         ; Reserved
+                DCD     0                         ; Reserved
+                DCD     0                         ; Reserved
+                DCD     0                         ; Reserved
                 DCD     0                         ; Reserved
                 DCD     0                         ; Reserved
                 DCD     0                         ; Reserved
@@ -301,12 +301,6 @@ Default_Handler PROC
                 EXPORT   RTC2_IRQHandler [WEAK]
                 EXPORT   I2S_IRQHandler [WEAK]
                 EXPORT   FPU_IRQHandler [WEAK]
-                EXPORT   USBD_IRQHandler [WEAK]
-                EXPORT   UARTE1_IRQHandler [WEAK]
-                EXPORT   QSPI_IRQHandler [WEAK]
-                EXPORT   CRYPTOCELL_IRQHandler [WEAK]
-                EXPORT   PWM3_IRQHandler [WEAK]
-                EXPORT   SPIM3_IRQHandler [WEAK]
 POWER_CLOCK_IRQHandler
 RADIO_IRQHandler
 UARTE0_UART0_IRQHandler
@@ -344,12 +338,6 @@ SPIM2_SPIS2_SPI2_IRQHandler
 RTC2_IRQHandler
 I2S_IRQHandler
 FPU_IRQHandler
-USBD_IRQHandler
-UARTE1_IRQHandler
-QSPI_IRQHandler
-CRYPTOCELL_IRQHandler
-PWM3_IRQHandler
-SPIM3_IRQHandler
                 B .
                 ENDP
                 ALIGN

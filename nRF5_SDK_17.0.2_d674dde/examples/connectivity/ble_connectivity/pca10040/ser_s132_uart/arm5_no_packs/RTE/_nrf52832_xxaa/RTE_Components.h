@@ -3,8 +3,8 @@
  * Auto generated Run-Time-Environment Configuration File
  *      *** Do not modify ! ***
  *
- * Project: 'spi_pca10056' 
- * Target:  'nrf52840_xxaa' 
+ * Project: 'ble_connectivity_s132_uart_pca10040' 
+ * Target:  'nrf52832_xxaa' 
  */
 
 #ifndef RTE_COMPONENTS_H
